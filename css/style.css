@@ -49,6 +49,7 @@ html{
 body.dark-theme{
   --title-color: #f2f2f2;
   --text-color: #BFBFBF;
+  --text-color-light: #e5d3c4;
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
@@ -453,6 +454,10 @@ img{
   font-size: var(--h3-font-size);
 }
 
+.education-title{
+  font-weight: 600;
+}
+
 .education-studies,
 .experience-company{
   font-size: var(--h3-font-size);
@@ -499,9 +504,21 @@ img{
 }
 
 /*========== CERTIFICATES ==========*/
+.certidicate-container-list{
+  list-style: disc;
+}
+
+.certidicate-container-list li{
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
 .certificate-title{
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+}
+
+.certificate-description{
+  font-size: .87rem;
 }
 
 /*========== REFERENCES ==========*/
