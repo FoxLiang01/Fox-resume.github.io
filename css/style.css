@@ -412,7 +412,7 @@ img{
   text-align: center;
 }
 
-/*========== EDUCATION AND EXPERIENCE ==========*/
+/*========== EDUCATION AND EXPERIENCE =================================*/
 .education-content,
 .experience-content{
   display: flex;
@@ -456,6 +456,14 @@ img{
 .education-studies,
 .experience-company{
   font-size: var(--h3-font-size);
+}
+
+.experience-description-list li{
+  list-style: inside;
+}
+
+.education-university{
+  font-size: .9rem;
 }
 
 .education-year{
@@ -628,7 +636,7 @@ img{
   }
 
   .interests-container{
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     column-gap: 3.5rem;
   }
 }
