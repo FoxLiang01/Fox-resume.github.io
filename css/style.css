@@ -10,8 +10,11 @@
   --text-color: #31271f;
   --text-color-light: #968272;
   --container-color: #fffaf6;
-  --container-color-alt: #f0e5da;
+  --container-color-alt: #f4ebe1;
   --body-color: #FCFCFC;
+  
+  --bar-color-light: #d0bcab;
+  --bar-color: #887566;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -53,6 +56,9 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
+
+  --bar-color-light: #d0bcab;
+  --bar-color: #887566;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -274,6 +280,10 @@ img{
       z-index: var(--z-fixed);
       transition: .3s;
   }
+
+  .skills-content{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 .nav-logo,
@@ -488,12 +498,12 @@ img{
 
 .skills-name,
 .languages-name{
-  display: flex;
+  display: block;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
-.skills-circle,
+/* .skills-circle,
 .languages-circle{
   display: inline-block;
   width: 5px;
@@ -501,6 +511,24 @@ img{
   background-color: var(--text-color);
   border-radius: 50%;
   margin-right: .75rem;
+} */
+
+.skills-bar{
+  display: block;
+  width: 90%;
+  height: 10px;
+  background: var(--bar-color-light);
+  margin-top: .25rem;
+  border-radius: 1rem;
+}
+
+.skills-bar-per{
+  position: relative;
+  display: block;
+  height: 10px;
+  margin-top: .25rem;
+  border-radius: 1rem;
+  background: var(--bar-color);
 }
 
 /*========== CERTIFICATES ==========*/
@@ -591,6 +619,10 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
+
+  .skills-content{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 /* Classes modified for large screen size */
@@ -656,4 +688,5 @@ img{
     grid-template-columns: repeat(5, max-content);
     column-gap: 3.5rem;
   }
+  
 }

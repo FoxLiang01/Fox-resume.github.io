@@ -111,3 +111,24 @@ resumeButton.addEventListener('click', () =>{
     setTimeout(removeScale, 5000);
 
 })
+//调技能的进度条
+const skillsBars = document.getElementsByClassName('skills-bar-per');
+select = ()=>{
+    for(var i = 0; i < skillsBars.length ; i++){
+        skillsBars[i].id="skills-bar-per-"+i;
+        switch(i){
+            case 0:document.getElementById("skills-bar-per-"+i).style.width="90%";break;
+            case 1:document.getElementById("skills-bar-per-"+i).style.width="70%";break;
+            case 2:document.getElementById("skills-bar-per-"+i).style.width="65%";break;
+            case 3:document.getElementById("skills-bar-per-"+i).style.width="60%";break;
+            case 4:document.getElementById("skills-bar-per-"+i).style.width="60%";break;
+            case 5:document.getElementById("skills-bar-per-"+i).style.width="60%";break;
+            case 6:document.getElementById("skills-bar-per-"+i).style.width="90%";break;
+            case 7:document.getElementById("skills-bar-per-"+i).style.width="90%";break;
+            case 8:document.getElementById("skills-bar-per-"+i).style.width="80%";break;
+            case 9:document.getElementById("skills-bar-per-"+i).style.width="70%";break;
+            case 10:document.getElementById("skills-bar-per-"+i).style.width="70%";break;
+        }
+    }
+}
+select();
