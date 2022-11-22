@@ -91,7 +91,7 @@ let resumeButton = document.getElementById('resume-button')
 //html2pdf option
 let opt = {
     margin:       0,
-    filename:     'myResume.pdf',
+    filename:     '简历-梁嘉泳.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' }
