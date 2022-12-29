@@ -117,8 +117,8 @@ select = ()=>{
     for(var i = 0; i < skillsBars.length ; i++){
         skillsBars[i].id="skills-bar-per-"+i;
         switch(i){
-            case 0:document.getElementById("skills-bar-per-"+i).style.width="90%";break;
-            case 1:document.getElementById("skills-bar-per-"+i).style.width="70%";break;
+            case 0:document.getElementById("skills-bar-per-"+i).style.width="80%";break;
+            case 1:document.getElementById("skills-bar-per-"+i).style.width="80%";break;
             case 2:document.getElementById("skills-bar-per-"+i).style.width="70%";break;
             case 3:document.getElementById("skills-bar-per-"+i).style.width="60%";break;
             case 4:document.getElementById("skills-bar-per-"+i).style.width="60%";break;
